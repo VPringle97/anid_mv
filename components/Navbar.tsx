@@ -14,7 +14,7 @@ export function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <motion.h1
           whileHover={{ scale: 1.1 }}
-          className="font-orbitron text-3xl font-bold text-fucsia"
+          className="font-orbitron text-3xl font-bold text-fucsia animate-glow"
         >
           Anid_MV
         </motion.h1>
@@ -40,6 +40,12 @@ export function Navbar() {
             className="cursor-pointer text-xl text-azul hover:text-fucsia transition-colors"
           >
             <Link href="#quotes">Quotes</Link>
+          </motion.li>
+          <motion.li
+            whileHover={{ y: -5 }}
+            className="cursor-pointer text-xl text-azul hover:text-fucsia transition-colors"
+          >
+            <Link href="#banda">Banda</Link>
           </motion.li>
           <motion.li
             whileHover={{ y: -5 }}

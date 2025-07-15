@@ -11,28 +11,9 @@ export function Footer() {
           className="text-center"
         >
           <p className="text-gray-400 mb-4">
-            © 2025 Anid_MV. Todos los derechos reservados.
+            © {new Date().getFullYear()} Anid_MV. Todos los derechos reservados.
           </p>
-          <div className="flex justify-center space-x-4">
-            <motion.a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -2 }}
-              className="text-gray-400 hover:text-pink-500 transition-colors"
-            >
-              Términos de Uso
-            </motion.a>
-            <motion.a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -2 }}
-              className="text-gray-400 hover:text-pink-500 transition-colors"
-            >
-              Política de Privacidad
-            </motion.a>
-          </div>
+       
         </motion.div>
       </div>
     </footer>
