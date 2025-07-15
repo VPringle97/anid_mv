@@ -1,0 +1,54 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+export function Navbar() {
+  return (
+    <motion.nav
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm p-4"
+    >
+      <div className="container mx-auto flex justify-between items-center">
+        <motion.h1
+          whileHover={{ scale: 1.1 }}
+          className="font-orbitron text-3xl font-bold text-pink-500"
+        >
+          Anid_MV
+        </motion.h1>
+        
+        <motion.ul
+          className="hidden md:flex space-x-8"
+          whileHover={{ scale: 1.05 }}
+        >
+          <motion.li
+            whileHover={{ y: -5 }}
+            className="cursor-pointer text-xl hover:text-pink-500 transition-colors"
+          >
+            <Link href="#home">Inicio</Link>
+          </motion.li>
+          <motion.li
+            whileHover={{ y: -5 }}
+            className="cursor-pointer text-xl hover:text-pink-500 transition-colors"
+          >
+            <Link href="#biography">Biografía</Link>
+          </motion.li>
+          <motion.li
+            whileHover={{ y: -5 }}
+            className="cursor-pointer text-xl hover:text-pink-500 transition-colors"
+          >
+            <Link href="#quotes">Frases</Link>
+          </motion.li>
+          <motion.li
+            whileHover={{ y: -5 }}
+            className="cursor-pointer text-xl hover:text-pink-500 transition-colors"
+          >
+            <Link href="#contact">Contacto</Link>
+          </motion.li>
+        </motion.ul>
+      </div>
+    </motion.nav>
+  );
+}
