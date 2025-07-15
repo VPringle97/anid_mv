@@ -24,14 +24,14 @@ export function Biography() {
           <div className="space-y-6">
             <motion.h2
               whileHover={{ scale: 1.05 }}
-              className="font-orbitron text-4xl md:text-5xl font-bold text-pink-500"
+              className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia"
             >
-              Mi Historia
+              Mi Bio
             </motion.h2>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-texto-gris">
               Soy una artista urbana apasionada por la música y la creatividad. Mi estilo mezcla elementos modernos con raíces tradicionales, creando un sonido único y auténtico.
             </p>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-texto-gris">
               Mi música busca conectar con las emociones más profundas y transmitir mensajes de empoderamiento y esperanza.
             </p>
           </div>

@@ -19,7 +19,7 @@ export function SocialLinks() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-pink-500 mb-8">
+          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-8">
             Sígueme
           </h2>
           <div className="flex justify-center gap-8">
@@ -31,7 +31,7 @@ export function SocialLinks() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-4xl hover:text-pink-500 transition-colors"
+                className="text-4xl text-azul hover:text-fucsia transition-colors"
                 title={link.label}
               >
                 <link.icon />

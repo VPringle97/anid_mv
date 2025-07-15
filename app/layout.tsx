@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${orbitron.variable} ${poppins.variable} ${bebasNeue.variable} scroll-smooth`}>
-      <body className={`font-poppins bg-black text-white`}>
+      <body className={`font-poppins bg-fondo-negro text-texto-gris`}>
         {children}
       </body>
     </html>

@@ -13,12 +13,13 @@ module.exports = {
         'bebas-neue': ['var(--font-bebas-neue)', 'sans-serif'],
       },
       colors: {
-        neon: {
-          pink: '#ff0066',
-          blue: '#00ffff',
-          green: '#00ff00',
-          purple: '#9900ff',
-        },
+        'fondo-negro': '#0D0D0D',
+        'fucsia': '#FF2EC8',
+        'azul': '#00FFFF',
+        'verde': '#39FF14',
+        'morado': '#9D00FF',
+        'amarillo': '#FFFF33',
+        'texto-gris': '#CCCCCC',
       },
       animation: {
         'glow': 'glow 2s ease-in-out infinite',

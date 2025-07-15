@@ -26,10 +26,10 @@ export function Hero() {
         transition={{ duration: 0.8 }}
         className="relative text-center z-10"
       >
-        <h1 className="font-orbitron text-6xl md:text-8xl font-bold text-pink-500 mb-4">
+        <h1 className="font-orbitron text-6xl md:text-8xl font-bold text-fucsia mb-4">
           Que show mi people
         </h1>
-        <p className="text-2xl md:text-4xl text-gray-300">
+        <p className="text-2xl md:text-4xl text-texto-gris">
           Espero que les este gustando este rollo
         </p>
       </motion.div>

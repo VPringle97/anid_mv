@@ -25,7 +25,7 @@ export function ContactForm() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-pink-500 mb-8 text-center">
+          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-8 text-center">
             Contáctame
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -35,7 +35,7 @@ export function ContactForm() {
                 placeholder="Nombre"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full p-4 bg-black/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full p-3 bg-fondo-negro bg-opacity-50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
               />
             </div>
             <div>
@@ -44,7 +44,7 @@ export function ContactForm() {
                 placeholder="Email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full p-4 bg-black/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full p-3 bg-fondo-negro bg-opacity-50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
               />
             </div>
             <div>
@@ -53,12 +53,12 @@ export function ContactForm() {
                 placeholder="Mensaje"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full p-4 bg-black/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full p-3 bg-fondo-negro bg-opacity-50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-verde"
               />
             </div>
             <button
               type="submit"
-              className="w-full py-4 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors"
+              className="w-full py-3 px-6 bg-fucsia hover:bg-opacity-80 rounded-lg font-semibold transition-colors text-white"
             >
               Enviar Mensaje
             </button>
