@@ -7,13 +7,13 @@ export function Hero() {
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <iframe
           src={youtubeUrl + '?autoplay=1&mute=1&loop=1&playlist=eTC7VaH2jFw'}
           title="Video de fondo"
           allow="autoplay; encrypted-media"
           allowFullScreen
-          className="w-full h-full"
+          className="w-full h-full scale-125"
           frameBorder="0"
         />
       </div>
@@ -30,7 +30,7 @@ export function Hero() {
           Que show mi people
         </h1>
         <p className="text-2xl md:text-4xl text-texto-gris">
-          Espero que les este gustando este rollo
+          Espero que les esté gustando este rollo
         </p>
       </motion.div>
     </section>

@@ -3,11 +3,10 @@ import { FaInstagram, FaSpotify, FaYoutube, FaTwitter, FaTiktok } from 'react-ic
 
 export function SocialLinks() {
   const socialLinks = [
-    { icon: FaInstagram, href: "#", label: "Instagram" },
-    { icon: FaSpotify, href: "#", label: "Spotify" },
-    { icon: FaYoutube, href: "#", label: "YouTube" },
-    { icon: FaTwitter, href: "#", label: "Twitter" },
-    { icon: FaTiktok, href: "#", label: "TikTok" }
+    { icon: FaInstagram, href: "https://www.instagram.com/anid_mv/", label: "Instagram" },
+    { icon: FaSpotify, href: "https://open.spotify.com/artist/0oH1Q4hef06fVvQbNvAjn8", label: "Spotify" },
+    { icon: FaYoutube, href: "https://www.youtube.com/@anidmunoz5800", label: "YouTube" },
+    { icon: FaTiktok, href: "https://www.tiktok.com/@anidmunoz0", label: "TikTok" }
   ];
 
   return (

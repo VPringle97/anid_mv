@@ -39,6 +39,12 @@ export function Navbar() {
             whileHover={{ y: -5 }}
             className="cursor-pointer text-xl text-azul hover:text-fucsia transition-colors"
           >
+            <Link href="#latest-song">Último</Link>
+          </motion.li>
+          <motion.li
+            whileHover={{ y: -5 }}
+            className="cursor-pointer text-xl text-azul hover:text-fucsia transition-colors"
+          >
             <Link href="#quotes">Quotes</Link>
           </motion.li>
           <motion.li
