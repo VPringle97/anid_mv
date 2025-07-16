@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { FaYoutube } from 'react-icons/fa';
 
 export function Hero() {
   const youtubeUrl = 'https://www.youtube.com/embed/eTC7VaH2jFw';
@@ -8,6 +9,15 @@ export function Hero() {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center">
       <div className="absolute inset-0 overflow-hidden">
+        <a 
+          href="https://www.youtube.com/watch?v=eTC7VaH2jFw" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="absolute bottom-4 right-4 z-20 bg-black/60 hover:bg-red-600 transition-colors p-3 rounded-full text-white text-2xl"
+          aria-label="Ver video en YouTube"
+        >
+          <FaYoutube />
+        </a>
         <iframe
           src={youtubeUrl + '?autoplay=1&mute=1&loop=1&playlist=eTC7VaH2jFw'}
           title="Video de fondo"

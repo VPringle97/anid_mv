@@ -7,10 +7,10 @@ import { FaInstagram } from 'react-icons/fa';
 const banda = [
   {
     id: 1,
-    name: 'Productor Estrella',
-    handle: '@productor_estrella',
-    imageUrl: '/images/banda/productor.jpg', // Placeholder image
-    profileUrl: 'https://instagram.com/productor_estrella',
+    name: 'GoodFellas',
+    handle: '@goodfellas_oficial_',
+    imageUrl: '/images/productor.png', 
+    profileUrl: 'https://www.instagram.com/goodfellas_oficial_/',
   },
   {
     id: 2,
@@ -38,9 +38,14 @@ export function BandaImportante() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05 }}
+            className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-12"
+          >
             Banda Importante
-          </h2>
+          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {banda.map((miembro) => (
               <motion.a

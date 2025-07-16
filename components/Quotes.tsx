@@ -34,9 +34,14 @@ export function Quotes() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-8">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05 }}
+            className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-8"
+          >
             Mis Quotes
-          </h2>
+          </motion.h2>
           <AnimatePresence mode="wait">
             <div className="h-32 flex items-center justify-center">
               <motion.p

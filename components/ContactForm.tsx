@@ -25,9 +25,14 @@ export function ContactForm() {
           transition={{ duration: 0.5 }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-8 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05 }}
+            className="font-orbitron text-4xl md:text-5xl font-bold text-fucsia mb-8 text-center"
+          >
             Contáctame
-          </h2>
+          </motion.h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <input

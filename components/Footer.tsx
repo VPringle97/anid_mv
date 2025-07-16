@@ -13,7 +13,17 @@ export function Footer() {
           <p className="text-gray-400 mb-4">
             © {new Date().getFullYear()} Anid_MV. Todos los derechos reservados.
           </p>
-       
+          <p className="text-gray-500 text-sm">
+            Site developed by{' '}
+            <a 
+              href="https://valeriapringle.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-fucsia hover:underline"
+            >
+              Valeria Pringle
+            </a>
+          </p>
         </motion.div>
       </div>
     </footer>
