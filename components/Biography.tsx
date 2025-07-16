@@ -13,14 +13,14 @@ export function Biography() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid md:grid-cols-2 gap-12 items-center"
+          className="grid md:grid-cols-2 gap-12 items-start"
         >
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+          <div className="relative w-full h-[550px] rounded-lg overflow-hidden">
             <Image
-              src="/images/artist-photo.jpg"
+              src="/images/anid_mv.png"
               alt="Anid_MV"
               fill
-              className="object-cover"
+              className="object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
           </div>

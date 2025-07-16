@@ -26,7 +26,7 @@ export function Quotes() {
   const [currentQuote, setCurrentQuote] = useState(0);
 
   return (
-    <section id="quotes" className="py-20 bg-black/50">
+    <section id="quotes" className="py-20 bg-black/50 h-96">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
@@ -38,16 +38,18 @@ export function Quotes() {
             Mis Quotes
           </h2>
           <AnimatePresence mode="wait">
-            <motion.p
-              key={currentQuote}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className={`font-bebas-neue text-4xl md:text-5xl tracking-wider ${quotes[currentQuote].color}`}
-            >
-              "{quotes[currentQuote].text}"
-            </motion.p>
+            <div className="h-32 flex items-center justify-center">
+              <motion.p
+                key={currentQuote}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                className={`font-bebas-neue text-4xl md:text-5xl tracking-wider text-center ${quotes[currentQuote].color}`}
+              >
+                "{quotes[currentQuote].text}"
+              </motion.p>
+            </div>
           </AnimatePresence>
           <button
             onClick={() => setCurrentQuote((prev) => (prev + 1) % quotes.length)}
